@@ -36,6 +36,8 @@ router.post('/registrarProducto',async(req,res,next)=>{
     res.render('pages/index')
 });
 
+router.get('/enviarcorreo', require ('../models/enviocorreo').sendEmail)
+
 
 
 module.exports = router;
